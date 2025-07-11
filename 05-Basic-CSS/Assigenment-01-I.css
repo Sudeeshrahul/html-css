@@ -1,0 +1,23 @@
+#heading{
+    font-size: xx-large;
+    color: rgb(255, 0, 0);
+}
+li:nth-child(2){
+    color: blueviolet;
+}
+li:nth-child(3){
+    color: brown;
+}
+li:nth-child(4){
+    color: rgb(17, 144, 255);
+}
+li:nth-child(5){
+    color: darkgreen;
+}
+li:nth-child(6){
+    color: white;
+}
+*{
+    margin: 0px;
+    /* padding: 0px; */
+}

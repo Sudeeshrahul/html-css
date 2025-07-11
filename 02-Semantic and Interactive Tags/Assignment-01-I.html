@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Create a webpage using semantic elements to structure content like a blog. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+            margin: 10px;
+            line-height: 1.6;
+        }
+        #header-1{
+            background-color: rgb(198, 204, 210);
+            align-content:flex-start;
+            text-align: center;
+        }
+        .nav-bar{
+            display: flex;
+            padding-left: 10px;
+            background: #d8d7d7;
+            align-content: center;
+            text-align: end;
+        }
+        .nav-bar h3{
+            padding-left: 30px;
+        }
+        .artical-1{
+            border-style:inset;
+
+        }
+        aside{
+             flex: 1;
+      background: #f9f9f9;
+      padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header-1">
+        <h1>My blog</h1>
+        <p>Thoughts, stories, and ideas.</p>
+    </header>
+    <nav class="nav-bar">
+        <h3>Home</h3>
+         <h3>About</h3>
+          <h3>Contact</h3>
+           
+    </nav>
+    <main>
+        <div class="artical-1">
+            <article>
+                <h2>Simple blog</h2>
+                <p>Name of blog :<strong>My first blog</strong></p>
+                <p>Design, write and maintain your web blog, focusing mainly on content written in <br>
+                the blog posts. Blogs are still popular on the Internet, and it has never been easier <br>
+                    to start a successful blog on just any topic you can imagine.</p>
+            </article>
+        </div>
+
+        <div>
+            <aside>
+                <img src="/imaged/batman.jpeg" alt="image">
+            </aside>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Sudeeshrahul149@gmail.com</p>
+    </footer>
+</body>
+</html>

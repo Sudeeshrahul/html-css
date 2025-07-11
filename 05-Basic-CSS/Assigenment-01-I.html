@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Create a basic webpage that uses HTML and CSS. The page will include a heading, a paragraph, a list, and an image, styled using inline, internal, and external CSS, along with various CSS selectors.
+
+Requirements:
+
+HTML Structure:
+Create a simple webpage with a heading (<h1>), a paragraph (<p>), an unordered list (<ul>), and an image (<img>).
+Use an id for the heading and a class for the container div.
+
+CSS Styling:
+Inline CSS: Style one list item (<li>) to change its color to blue.
+
+Internal CSS:
+Set the background color of the page.
+Change the font size of the paragraph.
+Style the image to have a maximum width of 100% and auto height for responsive design.
+
+External CSS:
+Set the font size and color for the heading.
+Style the list items to have a different color.
+
+Selectors:
+Use an element selector for the paragraph (<p>).
+Use a class selector for the container div.
+Use an ID selector for the heading (<h1>).
+Use the universal selector to remove margins/paddings.
+Style the image using a CSS selector (could be class or element selector). -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic-webpage</title>
+    <link rel="stylesheet" href="./Assigenment-01-I.css">
+    <style>
+        #body{
+            background: #a7e866;
+        }
+        p{
+            font-size: larger;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+            padding: 10px;
+            margin: 10px ;
+            border-style: solid;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body id="body">
+    <header>
+        <h1 id="heading">Simple webpage</h1>
+    </header>
+    <div class="div-contaner">
+        <p>
+            Enthusiastic and results-driven individual with foundational knowledge in Java, Spring Framework, SQL,<br>
+            HTML, CSS, and JavaScript, eager to apply and expand backend software development skills within a <br>
+            dynamic team and contribute to impactful solutions
+        </p>
+        <ul>
+            <li style="color: blue;">HTML for web structer</li>
+            <li>CSS for responsive webDesign</li>
+            <li>JavaScript for web functionality</li>
+            <li>React for middle ware</li>
+            <li>Node.js For backend</li>
+            <li>SQL for database management</li>
+        </ul>
+        <img src="/imaged/batman.jpeg" alt="batman image" >
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* body{
+    font-style:normal;
+}
+img{
+    border-radius: 10rem;
+}
+div {
+  text-align:justify; 
+}
+
+@media (max-width: 768px) {
+  .box1 {
+    margin: 2rem;
+    border: 1px solid black;
+    padding-left: 2rem;
+    width: 45%;
+  }
+}
+@media (max-width: 480px) {
+  .box1 {
+    margin: 2rem;
+    border: 1px solid black;
+    padding-left: 2rem;
+    width: 90%;
+  }
+} */
+ /* Parent container */
+ h1{
+    text-align: center;
+ }
+ header{
+    background: #d2cbcb;
+    padding: 10px;
+    margin-bottom: 3rem;
+ }
+.parent {
+  text-align: center; /* center the boxes if smaller than 100% width */
+}
+
+/* select every child of parent contenor */
+.parent > div {
+  display: inline-block;
+  width: 30%;
+  vertical-align: top;
+  margin: 1%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  border: 1px solid #000000;
+  border-radius: 8px;
+}
+
+/* Image styling */
+.parent img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Headings inside boxes */
+.parent h2 {
+  text-align: left;
+  font-size: 16px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+h6{
+    text-align: center;
+}
+.parent > div:hover{
+    background-color: #d2cbcb;
+}
+

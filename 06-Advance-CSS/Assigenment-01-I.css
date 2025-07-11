@@ -1,0 +1,30 @@
+#headder{
+    background: #29373a;
+    color: rgb(255, 238, 0);
+    margin: 10px;
+    padding: 5px;
+}
+.contaner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.contaner > div{
+    font-size: 2rem;
+    background: #bebaba;
+    padding: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    justify-content:center;
+}
+.contaner > div:hover{
+    background: #e17474;
+    transition: 1s;
+    width: 1%;
+    transition-delay: 1s;
+}
+#footer{
+    padding: 10px;
+    background: #b1aeae;
+    text-align: center;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Build a form with proper <label> usage linked to inputs for name, email, and message. 
+        Style the labels for readability. Add a <button> to your form and demonstrate the difference 
+        between type="submit", type="reset", and type="button" -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <style>
+        #n1:hover{
+             background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    transition: background-color 0.3s;
+        }
+        #n2:hover{
+              background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    /* transition: background-color 0.3s; */
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Form validation</h1>
+
+    </header>
+   <iframe width="560" height="315" 
+          src="https://www.youtube.com/watch?v=gzUu-FJ7s-Y&list=RDgzUu-FJ7s-Y&start_radio=1" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen
+          >
+  </iframe>
+    <div >
+        <label for="">Name</label>
+        <input type="text" required pattern="[a-zA-Z0-9]">
+        <br>
+        <label for="">Email</label>
+        <input id="n1" type="email" name="email" value="rahul@gmail.com" >
+        <br>
+        <label for="">message</label>
+        <input type="text" required pattern="[a-zA-Z0-9]" >
+        <br>
+        <input type="reset" name="reset" value="reset">
+        <input type="submit" name="" id="n2">
+    </div>
+    
+</body>
+</html>
