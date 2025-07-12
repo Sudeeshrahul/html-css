@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Type Coercion:Do addition for each of the data types (String,  Number, Boolean, Undefined,
+      Null, Symbol, Object) to all the possible type and print results in html page (ex: 5 + "10" → "510") -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Coercion</title>
+</head>
+<body>
+    <header>
+        <h2>Type Coercion</h2>
+    </header>
+    <br>
+    <h2>doing addition on String with  all data types</h2>
+    <p id="string"></p>
+    <h2>doing addition on String with  all data types</h2>
+    <p id="numbers"></p>
+    <h2>doing addition on boolean with  all data types</h2>
+    <p id="boolean"></p>
+    <h2>doing addition on objects with  all data types</h2>
+    <p id="object"></p>
+    <h2>doing addition on null with  all data types</h2>
+    <p id="Null"></p>
+    <h2>doing addition on Undefined with  all data types</h2>
+    <p id="undefined"></p>
+    <h2>doing addition on Symbol with  all data types</h2>
+    <p id="symbol"></p>
+
+    <script>
+        let str = "String";
+        const num = 123;
+        const isboolean = true;
+        const obj = {type:"Fiat", model:"500", color:"white"};
+        const nul = null;
+        const empty = undefined;
+        const sym = Symbol(9).toString();
+
+        let cc0 = str + str;
+        let cc1 = str + num;
+        let cc2 = str + isboolean;
+        let cc3 = str + obj;
+        let cc4 = str + nul;
+        let cc5 = str + empty;
+        let cc6 = str + sym;
+        
+
+        document.getElementById("string").innerHTML = "string + numbers = "+cc0 +"<br></br>"
+                                                +"string + numbers = "+cc1+"<br></br>"
+                                                +"string + Boolean = "+cc2+"<br></br>"
+                                                +"string + object = "+cc3+"<br></br>"
+                                                +"string + null = "+cc4+"<br></br>"
+                                                +"string + undefine = "+cc5+"<br></br>"
+                                                +"string + Symbol = "+cc6+"<br></br>";
+        
+        cc0 = num + str;
+        cc1 = num + num;
+        cc2 = num + isboolean;
+        cc3 = num + obj;
+        cc4 = num + nul;
+        cc5 = num + empty;
+        cc6 = num + sym;
+                    
+        document.getElementById("numbers").innerHTML =  "Number + string = "+cc0 +"<br></br>"
+                                                    +"Number + numbers = "+cc1+"<br></br>"
+                                                    +"Number + boolean = "+cc2+"<br></br>"
+                                                    +"Number + object = "+cc3+"<br></br>"
+                                                    +"Number + null = "+cc4+"<br></br>"
+                                                    +"Number + Undefine = "+cc5+"<br></br>"
+                                                    +"Number + Symbol = "+cc5+"<br></br>";
+
+
+        cc0 = isboolean + str;
+        cc1 = isboolean + num;
+        cc2 = isboolean + isboolean;
+        cc3 = isboolean + obj;
+        cc4 = isboolean + nul;
+        cc5 = isboolean + empty;
+        cc6 = isboolean + sym;
+                    
+        document.getElementById("boolean").innerHTML =  "isboolean + string = "+cc0 +"<br></br>"
+                                                    +"isboolean + numbers = "+cc1+"<br></br>"
+                                                    +"isboolean + boolean = "+cc2+"<br></br>"
+                                                    +"isboolean + object = "+cc3+"<br></br>"
+                                                    +"isboolean + null = "+cc4+"<br></br>"
+                                                    +"isboolean + Undefine = "+cc5+"<br></br>"
+                                                    +"isboolean + Symbol = "+cc5+"<br></br>";
+
+        cc0 = obj + str;
+        cc1 = obj + num;
+        cc2 = obj + isboolean;
+        cc3 = obj + obj;
+        cc4 = obj + nul;
+        cc5 = obj + empty;
+        cc6 = obj + sym;
+                    
+        document.getElementById("object").innerHTML =  "object + string = "+cc0 +"<br></br>"
+                                                    +"object + numbers = "+cc1+"<br></br>"
+                                                    +"object + boolean = "+cc2+"<br></br>"
+                                                    +"object + object = "+cc3+"<br></br>"
+                                                    +"object + null = "+cc4+"<br></br>"
+                                                    +"object + Undefine = "+cc5+"<br></br>"
+                                                    +"object + Symbol = "+cc5+"<br></br>";
+
+        cc0 = nul + str;
+        cc1 = nul + num;
+        cc2 = nul + isboolean;
+        cc3 = nul + obj;
+        cc4 = nul + nul;
+        cc5 = nul + empty;
+        cc6 = nul + sym;
+                    
+        document.getElementById("Null").innerHTML =  "null + string = "+cc0 +"<br></br>"
+                                                    +"null + numbers = "+cc1+"<br></br>"
+                                                    +"null + boolean = "+cc2+"<br></br>"
+                                                    +"null + object = "+cc3+"<br></br>"
+                                                    +"null + null = "+cc4+"<br></br>"
+                                                    +"null + Undefine = "+cc5+"<br></br>"
+                                                    +"null + Symbol = "+cc5+"<br></br>";
+
+        cc0 = empty + str;
+        cc1 = empty + num;
+        cc2 = empty + isboolean;
+        cc3 = empty + obj;
+        cc4 = empty + nul;
+        cc5 = empty + empty;
+        cc6 = empty + sym;
+                    
+        document.getElementById("undefined").innerHTML =  "undefine + string = "+cc0 +"<br></br>"
+                                                    +"undefine + numbers = "+cc1+"<br></br>"
+                                                    +"undefine + boolean = "+cc2+"<br></br>"
+                                                    +"undefine + object = "+cc3+"<br></br>"
+                                                    +"undefine + null = "+cc4+"<br></br>"
+                                                    +"undefine + Undefine = "+cc5+"<br></br>"
+                                                    +"undefine + Symbol = "+cc5+"<br></br>";
+
+        cc0 = sym + str;
+        cc1 = sym + num;
+        cc2 = sym + isboolean;
+        cc3 = sym + obj;
+        cc4 = sym + nul;
+        cc5 = sym + empty;
+        cc6 = sym + sym;
+                    
+        document.getElementById("symbol").innerHTML =  "symbol + string = "+cc0 +"<br></br>"
+                                                    +"symbol + numbers = "+cc1+"<br></br>"
+                                                    +"symbol + boolean = "+cc2+"<br></br>"
+                                                    +"symbol + object = "+cc3+"<br></br>"
+                                                    +"symbol + null = "+cc4+"<br></br>"
+                                                    +"symbol + Undefine = "+cc5+"<br></br>"
+                                                    +"symbol + Symbol = "+cc5+"<br></br>";
+    </script>
+
+    <!-- <script src="/07-Variables-Data-Types-JS/Assigenment-03-I.js"></script> -->
+    
+</body>
+</html>
